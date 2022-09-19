@@ -2,7 +2,7 @@ name: Terraform                               # workflow name
 
 on:
   push:                                       
-    branches:                                 # similar to "only" in GitLab
+    branches:                                 # similar to "aonly" in GitLab
       - main
 
 jobs:
