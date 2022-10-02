@@ -13,9 +13,11 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Terraform security scan
-        uses: triat/terraform-security-scan@v2.2.1
+        uses: aquasecurity/tfsec-action@v1.0.0
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          soft_fail: true
 
   test:
     runs-on: ubuntu-latest
