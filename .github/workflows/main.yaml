@@ -15,7 +15,7 @@ jobs:
       - name: Terraform security scan
         uses: triat/terraform-security-scan@v2.2.1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: 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
 
   test:
     runs-on: ubuntu-latest
